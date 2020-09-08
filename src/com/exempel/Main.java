@@ -35,6 +35,8 @@ public class Main {
         System.out.println("Din Saab har nu färgen: " + saab.getFarg());
         System.out.println("Din Volvo har nu färgen: " + volvo.getFarg());
 
+        System.out.println();
+
         System.out.println("Skriv in antal dörrar för din Saab: ");
         saab.setDoor(scan.nextLine());
 
