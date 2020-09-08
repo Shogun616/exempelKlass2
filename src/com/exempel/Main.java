@@ -14,11 +14,11 @@ public class Main {
         System.out.println("Skriv in hastigheten för din Volvo: ");
         String hastVolvo = scan.nextLine();
 
-        Bil saab = new Bil("1.2", "röd", hastSaab);
-        Bil volvo = new Bil("1.6", "blå", hastVolvo);
+        Bil saab = new Bil("1.2", "röd",hastSaab, "1986");
+        Bil volvo = new Bil("1.6", "blå", hastVolvo, "2006");
 
-        System.out.println(saab.bilInfo("Saab"));
-        System.out.println(volvo.bilInfo("Volvo"));
+        System.out.println(saab.bilInfo());
+        System.out.println(volvo.bilInfo());
 
         if (Integer.parseInt(saab.getHastighet()) > Integer.parseInt(volvo.getHastighet())){
             System.out.println("Saab är snabbast!");
