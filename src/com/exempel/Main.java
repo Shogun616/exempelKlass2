@@ -14,8 +14,8 @@ public class Main {
         System.out.println("Skriv in hastigheten för din Volvo: ");
         String hastVolvo = scan.nextLine();
 
-        Bil saab = new Bil("1.2", "röd",hastSaab, "1986");
-        Bil volvo = new Bil("1.6", "blå", hastVolvo, "2006");
+        Bil saab = new Bil("1.2", "röd",hastSaab, "1986", "2");
+        Bil volvo = new Bil("1.6", "blå", hastVolvo, "2006", "4");
 
         System.out.println(saab.bilInfo());
         System.out.println(volvo.bilInfo());
@@ -34,5 +34,14 @@ public class Main {
 
         System.out.println("Din Saab har nu färgen: " + saab.getFarg());
         System.out.println("Din Volvo har nu färgen: " + volvo.getFarg());
+
+        System.out.println("Skriv in antal dörrar för din Saab: ");
+        saab.setDoor(scan.nextLine());
+
+        System.out.println("Skriv in antal dörrar för din Volvo: ");
+        volvo.setDoor(scan.nextLine());
+
+        System.out.println("Din Saab har nu: "  + saab.getDoor() + " dörrar");
+        System.out.println("Din Volvo har nu: "  + volvo.getDoor() + " dörrar");
     }
 }
